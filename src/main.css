@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-main: #0f0f0f;
+  --bg-hover: #3f3f3f;
+  --bg-search: #121212;
+  --border-color: #3f3f3f;
+  --text-primary: #f1f1f1;
+  --text-secondary: #aaaaaa;
+  --btn-bg: #222222;
+  --pill-bg: #272727;
+  --pill-bg-active: #f1f1f1;
+  --pill-text-active: #0f0f0f;
+  --font-stack: "Roboto", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-stack);
+  height: 100vh;
+}

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="javascript">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YT UI Clone</title>
+  <link rel="stylesheet" href="/src/main.css" />
+  <link rel="stylesheet" href="/src/header.css" />
+  <link rel="stylesheet" href="/src/content.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <button class="icon-btn menu-btn" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="logo">
+        <img src="/src/images/logo.png" alt="YouTube Logo" class="yt-logo" />
+      </div>
+    </div>
+
+    <div class="header-middle">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search" />
+        <button class="search-btn" id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <button class="icon-btn mic-btn">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+    </div>
+
+    <div class="header-right">
+      <button class="create-btn">
+        <i class="fa-solid fa-plus"></i> Create
+      </button>
+      <button class="icon-btn bell-btn">
+        <i class="fa-regular fa-bell"></i>
+      </button>
+      <img src="/src/images/yt.png" alt="Profile" class="profile-pic" />
+    </div>
+  </header>
+
+  <!-- Main -->
+  <div class="main-layout">
+    <!-- side-bar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="nav-section">
+        <a href="#" class="nav-item active"><span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+          Home</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-brands fa-tiktok"></i></span>
+          Shorts</a>
+      </div>
+      <hr />
+      <div class="nav-section">
+        <a href="#" class="nav-item nav-title"> Subscriptions ></a>
+        <div class="channels">
+          <a href="#" class="nav-item"><img class="channel-logo" src="/src/images/bbs.jpg" alt="" />
+            BeastBoyShub</a>
+          <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-angle-down"></i></span>
+            Show more
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="nav-section">
+        <a href="#" class="nav-item nav-titlee">You ></a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+          History</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-bars-staggered"></i></span>
+          Playlists</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-regular fa-clock"></i></span>
+          Watch later</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-regular fa-thumbs-up"></i></span>
+          Liked videos</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-arrow-down"></i></span>
+          Downloads</a>
+      </div>
+      <hr />
+      <div class="nav-section">
+        <a href="#" class="nav-item nav-title"> Explore</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+          Shoping</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-music"></i></span>
+          Music</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-gamepad"></i></span>
+          Gaming</a>
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-solid fa-angle-down"></i></span>
+          Show more</a>
+      </div>
+      <hr />
+      <div class="nav-section">
+        <a href="#" class="nav-item"><span class="nav-icon"><i class="fa-regular fa-flag"></i></i></span>
+          Report history</a>
+      </div>
+      <hr>
+      <div class="nav-section footer">
+        <div class="footer-section">
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Contact Us</a>
+          <a href="#" class="footer-link">Copyright</a>
+        </div>
+        <div class="footer-section">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Policy & Safety</a>
+        </div>
+        <div class="footer-section copyright">© 2026 Google LLC</div>
+      </div>
+    </aside>
+
+    <aside class="smaller-sidebar">
+      <a href="#home" class="sidebar-btn"><span><i class="fa-solid fa-house"></i>
+          <h1>Home</h1>
+        </span></a>
+      <a href="#shorts" class="sidebar-btn"><span><i class="fa-brands fa-tiktok"></i>
+          <h1>Shorts</h1>
+        </span></a>
+      <a href="#subscription" class="sidebar-btn">
+        <span><i class="fa-regular fa-circle-play"></i>
+          <h1>Subscription</h1>
+        </span>
+      </a>
+      <a href="#explore" class="sidebar-btn">
+        <span><i class="fa-regular fa-circle-user">
+          </i>
+          <h1>Explore</h1>
+        </span>
+      </a>
+    </aside>
+
+    <main class="main-content">
+      <div class="filter-pannel" id="flter-pannel">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Gaming</button>
+        <button class="filter-btn">Hollow Knight</button>
+        <button class="filter-btn">Trailers</button>
+        <button class="filter-btn">Mods</button>
+        <button class="filter-btn">Audio commentaries</button>
+        <button class="filter-btn">Graphics processing units</button>
+        <button class="filter-btn">Elden Ring</button>
+      </div>
+
+      <div class="video-grid" id="video-grid">
+
+        <!-- CARD 1 -->
+        <!-- CARD 10 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">19:14</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">I Built a Full Website Using Only AI Tools</h3>
+              <p class="channel-name">NextGen Coder</p>
+              <p class="video-stats">1.1M views • 12 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">12:45</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">Building My Dream Coding Setup in 24 Hours</h3>
+              <p class="channel-name">CodeWithAlex</p>
+              <p class="video-stats">1.2M views • 3 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">8:17</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">Top 10 VS Code Extensions Every Developer Needs</h3>
+              <p class="channel-name">DevNest</p>
+              <p class="video-stats">845K views • 5 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">22:11</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">How I Learned React in Just 30 Days</h3>
+              <p class="channel-name">Frontend Journey</p>
+              <p class="video-stats">532K views • 1 week ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">15:30</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">I Tried AI Tools for a Whole Week</h3>
+              <p class="channel-name">Techy Vibes</p>
+              <p class="video-stats">2.4M views • 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">31:09</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">Creating a Netflix Clone Using HTML & CSS</h3>
+              <p class="channel-name">Web Masters</p>
+              <p class="video-stats">921K views • 6 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">18:50</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">Day in the Life of a Computer Science Student</h3>
+              <p class="channel-name">Campus Logs</p>
+              <p class="video-stats">410K views • 4 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">10:22</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">JavaScript Projects You Should Build Right Now</h3>
+              <p class="channel-name">Code Sphere</p>
+              <p class="video-stats">678K views • 2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">27:40</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">Can You Learn Web Development Without College?</h3>
+              <p class="channel-name">Future Dev</p>
+              <p class="video-stats">1.8M views • 1 month ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <a href="#">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1280&h=720&fit=crop"
+                alt="Thumbnail" class="thumbnail">
+            </a>
+            <span class="video-duration">14:58</span>
+          </div>
+
+          <div class="video-info">
+            <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Avatar" class="channel-avatar">
+
+            <div class="video-text">
+              <h3 class="video-title">My First Freelance Client Paid Me THIS Much</h3>
+              <p class="channel-name">Digital Hustle</p>
+              <p class="video-stats">759K views • 9 days ago</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="javascript">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT Video</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/header.css" />
+    <link rel="stylesheet" href="/src/main.css" />
+    <link rel="stylesheet" href="/src/components/video-player.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <button class="icon-btn menu-btn" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+          <img src="/src/images/logo.png" alt="YouTube Logo" class="yt-logo" />
+        </div>
+      </div>
+
+      <div class="header-middle">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search" />
+          <button class="search-btn" id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="icon-btn mic-btn">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+      </div>
+
+      <div class="header-right">
+        <button class="create-btn">
+          <i class="fa-solid fa-plus"></i> Create
+        </button>
+        <button class="icon-btn bell-btn">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        <img src="/src/images/yt.png" alt="Profile" class="profile-pic" />
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <main class="video-section">
+        <div class="video-player">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/o4AJ0PH4xCM?si=ktVZ9nsz7qUOQiOK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="main-video-title">
+          <h3>I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14</h3>
+        </div>
+        <div class="channel">
+          <div class="channel-info">
+            <img src="/src/images/bbs.jpg" alt="Channel Logo" />
+            <div class="channel-name">
+              <h5>BeastBoyShub</h5>
+              <p>7.17M subscribers</p>
+            </div>
+            <button class="membership video-btn">JOIN</button>
+            <button class="bell-icon video-btn">
+              <i class="fa-solid fa-bell"></i>
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </div>
+          <div class="video-interaction-btn">
+            <button class="video-btn">
+              <i class="fa-solid fa-thumbs-up"></i> 25K
+            </button>
+            <button class="video-btn">
+              <i class="fa-regular fa-thumbs-down"></i>
+            </button>
+            <button class="video-btn">
+              <i class="fa-solid fa-share"></i> Share
+            </button>
+            <button class="video-btn">
+              <i class="fa-solid fa-arrow-down"></i> Download
+            </button>
+            <button class="video-btn">
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+        </div>
+        <div class="discription">
+          <div class="video-stats">
+            301K views 1 day ago #Schedule1 #bbs #addicting
+          </div>
+          <div class="video-discription">
+            Now that I have this big Barn to work on, It's time to actually make
+            huge amount of drugs and take this game to it's ending. Here is a
+            list of all my PC specs and the things I use in my Daily Life
+            (Amazon Affiliate link) :- https://www.amazon.in/shop/notshubatall …
+          </div>
+        </div>
+        <div class="comment-section">
+          <span class="users-comment">
+            <p>1,930 Comments</p>
+            <input
+              type="text"
+              name=""
+              id="comment"
+              placeholder="Add a comment..."
+            />
+            <div class="comment-btn">
+              <button class="video-btn">Cancel</button>
+              <button class="video-btn">Comment</button>
+            </div>
+          </span>
+          <div class="all-comments"></div>
+        </div>
+      </main>
+      <aside class="side-content">
+        <div class="filter-panel" id="filter-pannel">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Gaming</button>
+          <button class="filter-btn">Hollow Knight</button>
+          <button class="filter-btn">Trailers</button>
+          <button class="filter-btn">Mods</button>
+          <button class="filter-btn">Audio commentaries</button>
+          <button class="filter-btn">Graphics processing units</button>
+          <button class="filter-btn">Elden Ring</button>
+        </div>
+        <div class="video-grid">
+          <!-- video cards-->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="#">
+                <img
+                  src="/src/images/thumnail-bbs.jpg"
+                  alt="Thumbnail"
+                  class="thumbnail"
+                />
+              </a>
+              <span class="video-duration">49:02</span>
+            </div>
+
+            <div class="video-info">
+              <img
+                src="/src/images/bbs.jpg"
+                alt="Channel"
+                class="video-avatar"
+              />
+
+              <div class="video-text">
+                <p class="video-title">
+                  I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14
+                </p>
+                <p class="name-channel">BeastBoyShub</p>
+                <p class="video-stats">301K views • 1 day ago</p>
+              </div>
+
+              <button class="icon-btn dots-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="#">
+                <img
+                  src="/src/images/thumnail-bbs.jpg"
+                  alt="Thumbnail"
+                  class="thumbnail"
+                />
+              </a>
+              <span class="video-duration">49:02</span>
+            </div>
+
+            <div class="video-info">
+              <img
+                src="/src/images/bbs.jpg"
+                alt="Channel"
+                class="video-avatar"
+              />
+
+              <div class="video-text">
+                <p class="video-title">
+                  I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14
+                </p>
+                <p class="name-channel">BeastBoyShub</p>
+                <p class="video-stats">301K views • 1 day ago</p>
+              </div>
+
+              <button class="icon-btn dots-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="#">
+                <img
+                  src="/src/images/thumnail-bbs.jpg"
+                  alt="Thumbnail"
+                  class="thumbnail"
+                />
+              </a>
+              <span class="video-duration">49:02</span>
+            </div>
+
+            <div class="video-info">
+              <img
+                src="/src/images/bbs.jpg"
+                alt="Channel"
+                class="video-avatar"
+              />
+
+              <div class="video-text">
+                <p class="video-title">
+                  I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14
+                </p>
+                <p class="name-channel">BeastBoyShub</p>
+                <p class="video-stats">301K views • 1 day ago</p>
+              </div>
+
+              <button class="icon-btn dots-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="#">
+                <img
+                  src="/src/images/thumnail-bbs.jpg"
+                  alt="Thumbnail"
+                  class="thumbnail"
+                />
+              </a>
+              <span class="video-duration">49:02</span>
+            </div>
+
+            <div class="video-info">
+              <img
+                src="/src/images/bbs.jpg"
+                alt="Channel"
+                class="video-avatar"
+              />
+
+              <div class="video-text">
+                <p class="video-title">
+                  I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14
+                </p>
+                <p class="name-channel">BeastBoyShub</p>
+                <p class="video-stats">301K views • 1 day ago</p>
+              </div>
+
+              <button class="icon-btn dots-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="#">
+                <img
+                  src="/src/images/thumnail-bbs.jpg"
+                  alt="Thumbnail"
+                  class="thumbnail"
+                />
+              </a>
+              <span class="video-duration">49:02</span>
+            </div>
+
+            <div class="video-info">
+              <img
+                src="/src/images/bbs.jpg"
+                alt="Channel"
+                class="video-avatar"
+              />
+
+              <div class="video-text">
+                <p class="video-title">
+                  I MADE HUGE PROGRESS TODAY | Schedule 1 - Part 14
+                </p>
+                <p class="name-channel">BeastBoyShub</p>
+                <p class="video-stats">301K views • 1 day ago</p>
+              </div>
+
+              <button class="icon-btn dots-btn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
