@@ -18,8 +18,8 @@ This project was created for practicing modern frontend layout techniques such a
 
 # Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - Flexbox
 - CSS Grid
 
